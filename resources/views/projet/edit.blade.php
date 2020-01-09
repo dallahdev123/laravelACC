@@ -1,8 +1,11 @@
 @extends('layouts.default')
   
   @section('content')
+  <hr>
+  <hr>
           <!-- Content section -->
-		  <h1>Editer l'utilisateur #{{$userEdit->id}}</h1>
+      <h1 class="h1_title">Editer l'utilisateur #{{$userEdit->id}}</h1>
+      <hr>
 
         <form class='frm' method="post" action="{{route('automatiqueCallCenter.update', $userEdit)}}">
 		{{csrf_field()}}

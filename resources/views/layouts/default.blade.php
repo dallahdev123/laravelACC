@@ -34,33 +34,27 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto" >
           <li class="nav-item active">
-            <p class="nabar-btn ml-auto">
-              <a class="btn btn-primary" href="{{route('automatiqueCallCenter.index')}}">Home</a>
-            </p>
+              <a class="nav-link js-scroll-trigger" href="{{route('automatiqueCallCenter.index')}}">Home</a>
               <span class="sr-only">(current)</span>
           </li>
           <hr>
           <li class="nav-item">
-            <p class="nabar-btn">
-              <a class="btn btn-primary" href="{{route('automatiqueCallCenter.create')}}">Contacts</a>
-            </p>
+              <a class="nav-link js-scroll-trigger" href="{{route('automatiqueCallCenter.create')}}">Contacts</a>
           </li>
 
           <li class="nav-item">
-            <p class="nabar-btn">
-              <a class="btn btn-primary" href="#">About</a>
-            </p>
+              <a class="nav-link js-scroll-trigger" href="#">About</a>
           </li>
           
           <li class="nav-item">
             <div class="dropdown">
-                <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                   Services
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
+                  <button class="dropdown-item" type="button">Appel Cibl&eacute;</button>
+                  <button class="dropdown-item" type="button">Programmer un appel</button>
+                  <button class="dropdown-item" type="button">Envoyer des messages</button>
                 </div>
             </div>
           </li>
@@ -68,18 +62,38 @@
       </div>
     </div>
   </nav>
+  
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">With Asterisk, communication become easy! Our Call Center is easy to use</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  <!-- Header - set the background image for the header in the line below -->
+  <!-- Header - set the background image for the header in the line below 
   <div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
+    
     <div class="carousel-item active">
-      <img src="projet/pic/carous.jpg" class="d-block w-100" alt="...">
+      <img src="projet/pic/ACC2.jpg" class="d-block w-100" alt="...">
     </div>
-    <!--
-    <div class="carousel-item">
-      <img src="projet/pic/carous2.jpg" class="d-block w-100" alt="...">
-    </div>
-    -->
+    
   </div>
   </div>
   <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -90,7 +104,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div>-->
   
 <div class="container">
   @yield('content')

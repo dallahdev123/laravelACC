@@ -1,7 +1,10 @@
 @extends('layouts.default')
   
   @section('content')
-          <!-- Content section -->
+	<hr>
+  <h1 class="h1_title">Ajouter les Infos d'un utilisateur</h1>
+   			 <hr>
+          <!-- Content section
 
         <form class='frm' method="post" action="{{route('automatiqueCallCenter.store')}}">
 		{{csrf_field()}}
@@ -31,31 +34,53 @@
 			{!!$errors->first('telephone', '<p class="error">:message</p>')!!}
           </div>
           <button type="submit" class="btn btn-primary" name="">Save</button>
-        </form>
+        </form> -->
+
+					<div class="p-3 mb-2 bg-dark">
+
+				    	 <form id="formID" class="frm" action="{{route('automatiqueCallCenter.store')}}" method="post">
+						 	{{csrf_field()}}
+          
+				              <label class="lab">Nom : <span style="color:red; font-weight: bold; font-family: Arial, sans-serif ;">*</span></label>
+				              <div class="input-group">
+				                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								  <input name="nom" type="text" placeholder="Saisissez votre nom" class="form-control validate[required]" />
+							  </div>
+							  {!!$errors->first('nom', '<p class="error">:message</p>')!!}
+
+				               <label class="lab">Prenom : <span style="color:red; font-weight: bold; font-family: Arial, sans-serif ;">*</span></label>
+				              <div class="input-group">
+				                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								  <input name="prenom" type="text" placeholder="Saisissez votre prenom" class="form-control validate[required]" />
+							  </div>
+							  {!!$errors->first('prenom', '<p class="error">:message</p>')!!}
+				              
+				               <label class="lab">Adresse : <span style="color:red; font-weight: bold; font-family: Arial, sans-serif ;">*</span></label>
+				              <div class="input-group">
+				                  <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
+								  <input name="address" type="text" placeholder="Saisissez votre Adresse" class="form-control validate[required]" />
+							  </div>
+							  {!!$errors->first('address', '<p class="error">:message</p>')!!}
+
+							  <label class="lab">Email : <span style="color:red; font-weight: bold; font-family: Arial, sans-serif ;">*</span></label>
+				              <div class="input-group">
+				                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+								  <input type="email" name="email" placeholder="Saisissez votre address mail" class="form-control validate[required]"/>
+							  </div>
+							  {!!$errors->first('email', '<p class="error">:message</p>')!!}
+
+				               <label class="lab">Tel : <span style="color:red; font-weight: bold; font-family: Arial, sans-serif ;">*</span></label>
+				              <div class="input-group">
+				                  <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
+								  <input name="telephone" type="text" placeholder="Saisissez votre numero de telephone" class="form-control validate[required]" />
+							  </div>
+							  {!!$errors->first('telephone', '<p class="error">:message</p>')!!}
+							  <br>
+
+				          	<button type="submit" name="submit" class="btn btn-primary btn-lg active">AJOUTER L'UTILISATEUR</button>     
+
+				          <hr id='success'>
+
+      					</form>
+				   </div>
 @endsection
-
-<?php 
-/*	session_start();
-	//$db = mysql_connect('localhost', 'Dallah', 'root1234', 'asterix');
-		$db= new PDO('mysql:host=localhost;dbname=asterix;charset=utf8','Dallah','root1234');
-
-	// initialize variables
-	$prenom = "";
-	$nom = "";
-	$adresse = "";
-	$telephone = "";
-	$id = 0;
-	$update = false;
-
-	if (isset($_POST['save'])) {
-		$prenom = $_POST['prenom'];
-		$nom = $_POST['nom'];
-		$adresse = $_POST['adresse'];
-		$telephone = $_POST['telephone'];
-
-		$db->query("INSERT INTO user (prenom, nom, adresse, telephone) VALUES ('$prenom', '$nom', '$adresse','$telephone')"); 
-		$_SESSION['message'] = "Contact sauvegarde"; 
-		header('location: index.php');
-	}*/
-?>	
-	

@@ -3,19 +3,8 @@
   @section('content')
   <br>
   <br>
-  <br>
-  <?php  //connection dans la base de donnees
-  session_start();
-  ?>
-  <?php if (isset($_SESSION['message1'])): ?>
-  <div class="msg">
-			<?php
-				echo $_SESSION['message1']; 
-				unset($_SESSION['message1']);
-      ?>
-  </div>
-  <?php endif ?>
-  <h1 class="users">Mes contacts:{{$users->count()}}</h1>
+  <h1 class="h1_title">Mes contacts: {{$users->count()}}</h1>
+   			 <hr>
   <div class="container"> 
 	<table class="table table-striped">
 		<thead>
@@ -72,27 +61,4 @@
 
           <!-- Content section -->
 
-        <form class='frm' method="post" action="controller.php">
-          <div class="form-group">
-            <label for="formGroupExampleInput">Nom</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Saisissez votre nom">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Prenom</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Saisissez votre prenom">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput3">Address</label>
-            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Saisissez votre Adresse">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput4">Email</label>
-            <input type="email" class="form-control" id="formGroupExampleInput4" placeholder="Saisissez votre address mail">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput5">Telephone</label>
-            <input type="number" class="form-control" id="formGroupExampleInput5" placeholder="Saisissez votre numero de telephone">
-          </div>
-          <button type="submit" class="btn btn-primary" name="">Save</button>
-        </form>
 @endsection

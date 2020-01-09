@@ -6,6 +6,30 @@
 body {
     font-size: 19px;
 }
+/*Ajout*/
+header.masthead {
+    position: relative;
+    background-color: #848586;
+    background: url("../pic/ACC.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  
+  header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  
+  header.masthead h1 {
+    font-size: 2rem;
+  }
+
 table{
     width: 55%;
     margin: 30px auto;
@@ -29,20 +53,38 @@ thead{
 }
 
 .frm {
-    background: url(../pic/appel5.jpg);
-    background-size: contain;
-    width: 60%;
+    background: url(../pic/carous.jpg);
+    background-size: cover;
+    width: 100%;
     margin: 50px auto;
     text-align: left;
     padding: 20px; 
     border: 1px solid #bbbbbb; 
     border-radius: 5px;
 }
+h1.h1_title  {
+    text-align: center;
+    color : #fff;
+    font:bold;
+  background : #57889c;
+  background-color : #57889c;
+
+    -moz-box-shadow: 0 5px 3px rgba(0,0,0,.2), inset 0 -2px 0 rgba(0,0,0,.06);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2), inset 0 -2px 0 rgba(0,0,0,.06);
+  box-shadow: 0 1px 3px rgba(0,0,0,.2), inset 0 -2px 0 rgba(0,0,0,.06);
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    padding: 8px; 
+}
 .frm1 {
-    width: 60%;
+    width: 70%;
     margin: 50px auto;
     text-align: center;
-    padding: 20px; 
+    font-size: xx-large;
+    padding: 10px; 
     border: 1px solid #bbbbbb; 
     border-radius: 5px;
 }
@@ -127,16 +169,13 @@ h1{
     text-align: center;
 }
 .error {
-    margin: auto;
-    padding: 10px; 
-    border-radius: 5px; 
-    color: #F5F5F5; 
-    background: rgb(246, 58, 99); 
-    border: 1px solid #3c763d;
+    padding: 5px; 
+    color: rgb(223, 58, 58); 
     width: 50%;
-    text-align: center;
 }
-#nb{
-    display: flex;
-    justify-content: space-between;
+.lab {
+    width: 50%;
+}
+.hed {
+    width: 100%;
 }
