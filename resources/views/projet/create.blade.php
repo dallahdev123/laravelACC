@@ -2,7 +2,7 @@
   
   @section('content')
 	<hr>
-  <h1 class="h1_title">Ajouter les Infos d'un utilisateur</h1>
+  <h1 class="h1_title"><i class="fa fa-user" style="color: white; font-size: xxx-large;"></i> Ajouter les Infos d'un utilisateur</h1>
    			 <hr>
           <!-- Content section
 

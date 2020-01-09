@@ -4,7 +4,7 @@
   <hr>
   <hr>
           <!-- Content section -->
-      <h1 class="h1_title">Editer l'utilisateur #{{$userEdit->id}}</h1>
+      <h1 class="h1_title"><i class="fa fa-user" style="color: white; font-size: xxx-large;"></i> Editer l'utilisateur #{{$userEdit->id}}</h1>
       <hr>
 
         <form class='frm' method="post" action="{{route('automatiqueCallCenter.update', $userEdit)}}">

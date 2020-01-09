@@ -28,6 +28,7 @@ header.masthead {
   
   header.masthead h1 {
     font-size: 2rem;
+    font: bold;
   }
 
 table{

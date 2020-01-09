@@ -1,7 +1,7 @@
 @extends('layouts.default')
   
   @section('content')
-          <h1 class="h1_title">Utilisateur #{{$contact->id}}</h1>
+          <h1 class="h1_title"><i class="fa fa-user" style="color: white; font-size: xxx-large;"></i> Utilisateur #{{$contact->id}}</h1>
    			 <hr>
               <div class="container"> 
               <table class="table table-striped">

@@ -20,7 +20,7 @@ class CallsAllController extends Controller
                 
                 $file ="/var/spool/asterisk/outgoing/$nom.call";
                 if(!is_file($file)){
-                    $contents=["[plateform]","\nChanel: SIP/$telephone","\nMaxRetries: 2","\nRetryTime: 60","\nWaitTime: 30","\nContexte: plateform","\nExtension: 01"];
+                    $contents=["[plateform]","\nChannel: SIP/$telephone","\nMaxRetries: 0","\nRetryTime: 60","\nWaitTime: 30","\nContexte: automatique","\nExtension: 10"];
                     file_put_contents($file, $contents);
                     //rename($file, $outgoing . pathinfo($file, PATHINFO_BASENAME));
                     $outgoing = '/var/spool/asterisk/outgoing/';

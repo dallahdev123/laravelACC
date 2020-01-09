@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Asterisk Server</title>
 
@@ -19,7 +20,6 @@
   <!-- Custom styles for this template -->
   <link href="{{asset('projet/css/full-width-pics.css')}}" rel="stylesheet">
   <link href="{{asset('projet/css/style.css')}}" rel="stylesheet">
-
 </head>
 
 <body>
@@ -27,7 +27,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">DynamicCallCenter</a>
+      <a class="navbar-brand" href="#"><i class="fa fa-phone" style="color: lightblue; font-size: xx-large;"></i> DynamicCallCenter <i class="fa fa-phone" style="color: lightblue; font-size: xx-large;"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,9 +37,9 @@
               <a class="nav-link js-scroll-trigger" href="{{route('automatiqueCallCenter.index')}}">Home</a>
               <span class="sr-only">(current)</span>
           </li>
-          <hr>
+
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{{route('automatiqueCallCenter.create')}}">Contacts</a>
+              <a class="nav-link js-scroll-trigger" href="{{route('automatiqueCallCenter.create')}}"><i class="fa fa-plus" style="color: lightblue;"></i> Contacts</a>
           </li>
 
           <li class="nav-item">
@@ -113,14 +113,18 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; DallahDev 2019</p>
-    </div>
-    <div class="col-lg-4 col-sm-12 footer-social">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <p class="m-0 text-center text-white" style="float: left; font: bold;">Copyright &copy; DallahDevGalimaTech 2019</p>
+        </div>
+        <div class="col-lg-4 col-sm-4 footer-social">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
 							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-		</div>	
+							<a href="#"><i class="fa fa-instagram"></i></a>
+		    </div>	
+      </div>
+    </div>
     <!-- /.container -->
   </footer>
 
