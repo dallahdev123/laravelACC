@@ -4,7 +4,6 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Schema;//Ajouter pour resoudre le problem de https
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -34,10 +33,7 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
-        //Ajouter pour resoudre le problem de https
-        if (config('app.env')==='production') {
-            \URL::forceSchema('https');
-        }
+
     }
 
     /**
