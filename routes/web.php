@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', 'UserController@index')->name('home');
+Route::get('/', 'UserController@index')->name('home')->middleware('auth');
 Route::post('CallCenter/{id}', 'CallsController@call')->name('Call');
 Route::post('CallAllCenter', 'CallsAllController@call')->name('CallAll');
-Route::resource('automatiqueCallCenter', 'UserController');
+Route::resource('automatiqueCallCenter', 'UserController')->middleware('auth');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

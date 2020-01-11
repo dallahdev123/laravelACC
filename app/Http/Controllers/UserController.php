@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\DbCallCenter;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -11,7 +12,14 @@ class UserController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     */
+    */
+    public function user()
+    {
+        $user = Auth::user();
+        $user_id = Auth::id();
+        $users->user_id = auth::id();
+        $users->save();
+    }
     public function index()
     {
         $users = DbCallCenter::all();

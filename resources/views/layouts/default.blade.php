@@ -58,6 +58,14 @@
                 </div>
             </div>
           </li>
+          <div class="flex-center position-ref full-height">
+                <div class="top-right links">
+                  <form action="{{ route('logout') }}" method="post">
+                  {{csrf_field()}}
+                    <button>LogOut</button>
+                  </form>
+                </div>
+          </div>
         </ul>
       </div>
     </div>
