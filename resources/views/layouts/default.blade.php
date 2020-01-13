@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('en', 'fr', app()->getLocale()) }}">
 
 <head>
 

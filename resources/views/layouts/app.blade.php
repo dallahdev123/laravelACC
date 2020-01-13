@@ -15,13 +15,66 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="{{asset('projet/css/style.css')}}" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa fa-phone" style="color: lightblue; font-size: xx-large;"></i> DynamicCallCenter <i class="fa fa-phone" style="color: lightblue; font-size: xx-large;"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" >
+          <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" href="{{route('automatiqueCallCenter.index')}}">Home</a>
+              <span class="sr-only">(current)</span>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{{route('automatiqueCallCenter.create')}}"><i class="fa fa-plus" style="color: lightblue;"></i> Contacts</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">About</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+<br>
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">With Asterisk, communication become easy! Our Call Center is easy to use</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- ************************************************** -->
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-secondary shadow-sm" style="color: white;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
