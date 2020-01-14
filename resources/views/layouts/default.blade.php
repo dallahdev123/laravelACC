@@ -27,7 +27,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="fa fa-phone" style="color: lightblue; font-size: xx-large;"></i> DynamicCallCenter <i class="fa fa-phone" style="color: lightblue; font-size: xx-large;"></i></a>
+      <a class="navbar-brand" href="#"><img src="{{asset('projet/pic/logo.png')}}" alt="" width="70" height="40"> DynamicCallCenter <i class="fa fa-phone" style="color: lightblue; font-size: xx-large;"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
